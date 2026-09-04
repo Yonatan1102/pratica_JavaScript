@@ -1,3 +1,187 @@
 <script>
-    console.log("hola; mundo");
+    console.log("hola, mundo");
 </script>
+
+var resto = 15%5;
+console.log(resto);
+VM1161:2 0
+undefined
+//modificar varialbles 
+
+var pan = 157;
+consosole.log(panaderia);
+VM1401:4 Uncaught ReferenceError: consosole is not defined
+    at <anonymous>:4:1
+(anónimas) @ VM1401:4
+//modificar varialbles 
+
+var pan = 157;
+consosole.log(pan);
+VM1411:4 Uncaught ReferenceError: consosole is not defined
+    at <anonymous>:4:1
+(anónimas) @ VM1411:4
+//modificar varialbles 
+
+var pan = 157;
+console.log(pan);
+VM1420:4 157
+undefined
+pan = pan +1
+console.log(pan);
+VM1550:2 158
+undefined
+pan++
+console.log(pan);
+VM1578:2 159
+undefined
+pan++
+console.log(pan);
+VM1580:2 160
+undefined
+// resta
+
+var panes =2345;
+console.log(panes);
+VM1726:4 2345
+undefined
+panes = panes - 1;
+console.log(panes)
+VM1830:2 2344
+undefined
+panes--
+console.log(panes)
+VM1840:2 2343
+undefined
+var a = 23;
+a += 5;
+conosle.log(a);
+VM1947:3 Uncaught ReferenceError: conosle is not defined
+    at <anonymous>:3:1
+(anónimas) @ VM1947:3
+var a = 23;
+a += 5;
+console.log(a);
+VM1956:3 28
+undefined
+var a = 23;
+a += 5;
+console.log(a);
+VM1958:3 28
+undefined
+//arreglo 
+
+undefined
+var mi arreglo =[12, 12, 54];
+console.log(arreglo[0]);
+console.log(arreglo[1]);
+console.log(arreglo[2]);
+
+
+ 
+VM2349:1 Uncaught SyntaxError: Unexpected identifier 'arreglo' (at VM2349:1:8)
+var miarreglo =[12, 12, 54];
+console.log(miarreglo[0]);
+console.log(miarreglo[1]);
+console.log(miarreglo[2]);
+
+
+ 
+VM2371:2 12
+VM2371:3 12
+VM2371:4 54
+undefined
+var sumar = mia
+VM2426:1 Uncaught ReferenceError: mia is not defined
+    at <anonymous>:1:13
+(anónimas) @ VM2426:1
+var sumar = miarreglo[0] + miarreglo[1]+ miarreglo[2];
+console.log(suma);
+VM2570:2 Uncaught ReferenceError: suma is not defined
+    at <anonymous>:2:13
+(anónimas) @ VM2570:2
+var sumar = miarreglo[0] + miarreglo[1]+ miarreglo[2];
+console.log(sumar);
+VM2580:2 78
+undefined
+// modificar un arreglo
+
+var miarreglo = [12,345,657];
+
+var miarreglo[0] = 40;
+var miarreglo[2] = "que pedo esta chido esto";
+console.log(miarreglo);
+VM2929:5 Uncaught SyntaxError: Unexpected token '[' (at VM2929:5:14)
+// modificar un arreglo
+
+var miarreglo = [12,345,657];
+
+ miarreglo[0] = 40; miarreglo[2] = "que pedo esta chido esto";
+console.log(miarreglo);
+VM2938:6 (3) [40, 345, 'que pedo esta chido esto']0: 401: 3452: "que pedo esta chido esto"length: 3[[Prototype]]: Array(0)
+undefined
+//arreglo multidimencionales
+
+var arreglar=[[1,2,3],[4,5,6],[,7,8,9],[10,11,12]];
+/*
+arreglo: [[1,2,3],[4,5,6],[,7,8,9],[10,11,12]]
+indice:      0       1        2            
+ 
+VM3194:4 Uncaught SyntaxError: Invalid or unexpected token (at VM3194:4:1)
+//arreglo multidimencionales
+
+var arreglar=[[1,2,3],[4,5,6],[,7,8,9],[10,11,12]];
+/*
+    arreglo:      [[1,2,3],[4,5,6],[,7,8,9],[10,11,12]]
+indice:               0       1        2        3   
+indicer internos:   0 1 2   0 1 2    0 1 2   0  1  2
+ */
+console.log(arreglar[0]);
+console.log(arreglar[1]);
+console.log(arreglar[2]);
+console.log(arreglar[3]);
+VM3420:9 (3) [1, 2, 3]0: 11: 22: 3length: 3[[Prototype]]: Array(0)
+VM3420:10 (3) [4, 5, 6]0: 41: 52: 6length: 3[[Prototype]]: Array(0)
+VM3420:11 (4) [vacío, 7, 8, 9]
+VM3420:12 (3) [10, 11, 12]0: 101: 112: 12length: 3[[Prototype]]: Array(0)
+undefined
+//arreglo multidimencionales
+
+var arreglar=[[1,2,3],[4,5,6],[7,8,9],[10,11,12]];
+/*
+    arreglo:      [[1,2,3],[4,5,6],[,7,8,9],[10,11,12]]
+indice:               0       1        2        3   
+indicer internos:   0 1 2   0 1 2    0 1 2   0  1  2
+ */
+console.log(arreglar[0]);
+console.log(arreglar[1]);
+console.log(arreglar[2]);
+console.log(arreglar[3]);
+VM3423:9 (3) [1, 2, 3]
+VM3423:10 (3) [4, 5, 6]
+VM3423:11 (3) [7, 8, 9]
+VM3423:12 (3) [10, 11, 12]
+undefined
+//acceder a unod e los elementos
+console.log(arrelar[1][3]);
+console.log(arreglar[3][8]);
+VM3710:2 Uncaught ReferenceError: arrelar is not defined
+    at <anonymous>:2:13
+(anónimas) @ VM3710:2
+//acceder a unod e los elementos
+console.log(arreglar[1][3]);
+console.log(arreglar[3][8]);
+VM3717:2 undefined
+VM3717:3 undefined
+undefined
+//acceder a unod e los elementos
+console.log(arreglar[1][2]);
+console.log(arreglar[3][1]);
+VM3723:2 6
+VM3723:3 11
+undefined
+var estacion=["invierno", "otoño", "verano"];
+estacion.push(otoño");
+VM3932:2 Uncaught SyntaxError: missing ) after argument list (at VM3932:2:15)
+var estacion=["invierno", "otoño", "verano"];
+estacion.push("otoño");
+4
